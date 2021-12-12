@@ -10,10 +10,9 @@ import (
 const doc = "oncenv detects os.Getenv in inappropriate place"
 
 var Analyzer = &analysis.Analyzer{
-	Name:             "oncenv",
-	Doc:              doc,
-	Run:              run,
-	RunDespiteErrors: true,
+	Name: "oncenv",
+	Doc:  doc,
+	Run:  run,
 }
 
 func run(pass *analysis.Pass) (interface{}, error) {
