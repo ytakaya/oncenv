@@ -9,5 +9,5 @@ import (
 
 func TestFromFileSystem(t *testing.T) {
 	testdata := analysistest.TestData()
-	analysistest.RunWithSuggestedFixes(t, testdata, oncenv.Analyzer, "a")
+	analysistest.Run(t, testdata, oncenv.Analyzer, "a")
 }
